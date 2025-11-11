@@ -1,7 +1,6 @@
 package pybstr_test
 
 import (
-	"log"
 	"maps"
 	"os"
 	"path/filepath"
@@ -25,7 +24,6 @@ func TestEncode(t *testing.T) {
 		examplesMap[name] = struct{}{}
 	}
 	examples := slices.Sorted(maps.Keys(examplesMap))
-	log.Println("Found examples:", examples)
 
 	for _, example := range examples {
 		t.Run(example, func(t *testing.T) {
@@ -68,7 +66,6 @@ func TestDecode(t *testing.T) {
 		examplesMap[name] = struct{}{}
 	}
 	examples := slices.Sorted(maps.Keys(examplesMap))
-	log.Println("Found examples:", examples)
 
 	for _, example := range examples {
 		t.Run(example, func(t *testing.T) {
