@@ -7,7 +7,7 @@ import (
 	"slices"
 	"testing"
 
-	pybstr "github.com/paskozdilar/go-python-bstring.git"
+	"github.com/paskozdilar/pybstr"
 )
 
 const Dir = "testdata"
